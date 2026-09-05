@@ -13,7 +13,7 @@ export default function Projects() {
       github: "https://github.com/DOUKANI-Nourelhouda/bookhup_frontend",
       demo: "https://github.com/nourelhouda666/bookhup_frontend/releases/download/v1.0.0/app-release.apk",
       year: "2026",
-      image: "/i.jpg"
+      image: "${process.env.PUBLIC_URL}/i.jpg"
     },
    {
   id: "Project 02",
@@ -24,7 +24,7 @@ export default function Projects() {
   github: "",
   demo: "",
   year: "2026",
-  image: "/po.png"
+  image: "${process.env.PUBLIC_URL}/po.png"
 },
 {
   id: "Project 03",
@@ -34,7 +34,7 @@ export default function Projects() {
   github: "",
   demo: "https://lnkd.in/eNFwhJ5f",
   year: "2025",
-  image: "/im2.jpg"
+  image: "${process.env.PUBLIC_URL}/im2.jpg"
 }
 ,{
   id: "Project 04",
@@ -44,7 +44,7 @@ export default function Projects() {
   github: "",
   demo: "https://lnkd.in/eY5uhg6c?trk=public_post-text",
   year: "2025",
-  image: "/tennix.jpg"
+  image: "${process.env.PUBLIC_URL}/tennix.jpg"
 },
 {
   id: "Project 05",
@@ -54,7 +54,7 @@ export default function Projects() {
   github: "",
   demo: "https://github.com/DOUKANI-Nourelhouda/portfolio/releases/download/untagged-f86fbd24003cef032c9d/subway.apk",
   year: "2026",
-  image: "/kk.jpg"
+  image: "${process.env.PUBLIC_URL}/kk.jpg"
 }
   ];
 

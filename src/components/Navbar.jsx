@@ -20,7 +20,7 @@ export default function Navbar({ darkMode, toggleTheme }) {
       {/* 🚀 Logo */}
       <Link to="/" className="relative z-50 flex items-center">
         <img 
-          src="/p.png" 
+          src="${process.env.PUBLIC_URL}/p.png" 
           alt="NE Logo" 
           className="h-12 sm:h-16 w-auto object-contain mix-blend-screen transition-transform duration-300 hover:scale-105"
         />

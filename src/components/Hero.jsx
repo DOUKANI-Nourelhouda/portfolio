@@ -92,7 +92,7 @@ export default function Hero() {
 
           <div className="relative z-10 flex justify-center items-center">
   <img 
-    src="/ne.jpg" 
+    src="${process.env.PUBLIC_URL}/ne.jpg" 
     alt="DOUKANI Nourelhouda" 
     className="w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] rounded-full object-cover drop-shadow-[0_20px_40px_rgba(0,0,0,0.9)]"
   />
