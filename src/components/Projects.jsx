@@ -52,7 +52,7 @@ export default function Projects() {
   description: "A fun and engaging running game inspired by the iconic Subway brand, featuring vibrant visuals and smooth gameplay.",
   tags: ["Gdscript", "Godot engine"],
   github: "",
-  demo: "https://lnkd.in/eY5uhg6c?trk=public_post-text",
+  demo: "https://github.com/DOUKANI-Nourelhouda/portfolio/releases/download/untagged-f86fbd24003cef032c9d/subway.apk",
   year: "2026",
   image: "/kk.jpg"
 }
