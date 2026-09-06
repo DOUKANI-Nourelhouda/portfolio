@@ -141,7 +141,7 @@ export default function Contact() {
             ))}
           </div>
 
-          <div className="pt-1 border-t border-white/10 flex items-center gap-4">
+          <div className="pt-4 border-t border-white/10 flex items-center gap-4">
             <span className="text-xl text-gray-300 font-mono">SOCIALS:</span>
             <a href="https://www.linkedin.com/in/doukani-nour-el-houda-5abb8b359?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" className="px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-[#ff0055] hover:bg-[#ff0055]/10 text-xs font-medium flex items-center gap-2 transition duration-300">
               <FaLinkedin className="text-[#ff0055] text-sm" /> LinkedIn
