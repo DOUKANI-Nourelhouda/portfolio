@@ -4,24 +4,24 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-[85vh] w-full overflow-hidden flex items-center justify-center px-10 py-0 relative">
+    <section id="home" className="min-h-[85vh] w-full overflow-hidden flex items-center justify-center px-10 py-3 relative">
       
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-        <div className="absolute -top-24 -left-24 w-[450px] h-[450px] rounded-full border border-purple-500/20 animate-spin-extremely-slow">
-          <span className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-purple-400 rounded-full shadow-[0_0_12px_#a855f7] animate-pulse"></span>
+        <div className="absolute -top-24 -left-24 w-[450px] h-[450px] rounded-full border border-[#ff0055]/20 animate-spin-extremely-slow">
+          <span className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 bg-[#ff0055] rounded-full shadow-[0_0_12px_#a855f7] animate-pulse"></span>
           <span className="absolute bottom-12 right-12 w-2 h-2 bg-white rounded-full shadow-[0_0_10px_#fff]"></span>
           <span className="absolute top-1/2 left-0 w-2.5 h-2.5 bg-pink-400 rounded-full shadow-[0_0_10px_#ec4899]"></span>
         </div>
 
-        <div className="absolute -bottom-32 -right-32 w-[550px] h-[550px] rounded-full border border-purple-500/20 animate-spin-extremely-slow" style={{ animationDirection: 'reverse' }}>
-          <span className="absolute top-12 right-1/4 w-3 h-3 bg-purple-300 rounded-full shadow-[0_0_15px_#d82eff] animate-pulse"></span>
+        <div className="absolute -bottom-32 -right-32 w-[550px] h-[550px] rounded-full border border-[#ff0055]/20 animate-spin-extremely-slow" style={{ animationDirection: 'reverse' }}>
+          <span className="absolute top-12 right-1/4 w-3 h-3 bg-[#ff0055] rounded-full shadow-[0_0_15px_#d82eff] animate-pulse"></span>
           <span className="absolute bottom-8 left-1/3 w-2.5 h-2.5 bg-white rounded-full shadow-[0_0_10px_#fff]"></span>
           <span className="absolute top-1/2 right-0 w-2 h-2 bg-pink-500 rounded-full shadow-[0_0_8px_#ec4899]"></span>
         </div>
 
-        <span className="absolute top-1/4 left-6 w-2 h-2 bg-purple-400 rounded-full shadow-[0_0_10px_#a855f7] animate-ping"></span>
+        <span className="absolute top-1/4 left-6 w-2 h-2 bg-[#ff0055] rounded-full shadow-[0_0_10px_#a855f7] animate-ping"></span>
         <span className="absolute bottom-1/3 right-8 w-2.5 h-2.5 bg-white rounded-full shadow-[0_0_12px_#fff] animate-pulse"></span>
-        <span className="absolute top-12 right-1/3 w-2 h-2 bg-purple-300 rounded-full shadow-[0_0_8px_#c084fc] animate-pulse"></span>
+        <span className="absolute top-12 right-1/3 w-2 h-2 bg-[#ff0055] rounded-full shadow-[0_0_8px_#c084fc] animate-pulse"></span>
       </div>
 
       <div className="max-w-6xl w-full flex flex-col lg:grid lg:grid-cols-2 gap-2 lg:gap-0 items-center relative z-10"> 

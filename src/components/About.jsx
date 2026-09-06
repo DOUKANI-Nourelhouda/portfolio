@@ -43,12 +43,13 @@ export default function About() {
   ];
 
   return (
-    <div className="w-full min-h-screen py-6 px-4 sm:py-12 md:py-20 px-4 sm:px-8 max-w-6xl mx-auto relative z-10 text-white">
+    <div className="w-full min-h-screen py-6 px-4 sm:px-8 max-w-6xl mx-auto relative z-10 text-white">
       
       {/* 1. Header Section / Responsive Typography */}
      {/* 1. Header Section */}
 {/* 1. Header Section */}
-<div className="mb-12 sm:mb-16 text-left border-l-4 border-[#ff0055] pl-4 sm:pl-6">
+<div className="mb-14 text-left">
+  <div className="mb-8 sm:mb-10 text-left border-l-4 border-[#ff0055] pl-4 sm:pl-6">
   
 
   <h1 className="text-5xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-3">
@@ -84,10 +85,10 @@ export default function About() {
     >
       <div>
         <div className="flex items-center justify-between mb-4">
-          <div className="p-2.5 sm:p-3 bg-purple-500/10 rounded-xl border border-[#ff0055] group-hover:scale-110 transition duration-300">
+          <div className="p-2.5 sm:p-3 bg-[#ff0055]/10 rounded-xl border border-[#ff0055] group-hover:scale-110 transition duration-300">
             {item.icon}
           </div>
-          <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-[#ff0055] bg-purple-500/10 px-2.5 sm:px-3 py-1 rounded-full border border-[#ff0055]">
+          <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-[#ff0055] bg-[#ff0055]/10 px-2.5 sm:px-3 py-1 rounded-full border border-[#ff0055]">
             {item.year}
           </span>
         </div>
@@ -101,6 +102,7 @@ export default function About() {
   ))}
 </div>
       </div>
+       </div>
 
     </div>
   );
