@@ -83,7 +83,7 @@ export default function App() {
       className="min-h-screen w-full relative font-sans selection:bg-[#ff0055] selection:text-white flex flex-col justify-between transition-colors duration-300
                  bg-[#030008] text-white dark:bg-cover dark:bg-center dark:bg-no-repeat dark:bg-fixed"
       style={{
-        backgroundImage: darkMode ? "url('${process.env.PUBLIC_URL}/pn.png')" : "none"
+        backgroundImage: darkMode ?  `url(${process.env.PUBLIC_URL}/pn.png)` : "none"
       }}
     >
       {loading && <Preloader onComplete={() => setLoading(false)} />}
