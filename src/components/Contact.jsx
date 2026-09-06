@@ -110,7 +110,7 @@ export default function Contact() {
         {/* Info Grid */}
         <div className="lg:col-span-5 order-1 lg:order-2 space-y-8">
           <div className="space-y-4">
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
+            <h2 className="text-5xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight">
               Have an Idea ? <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff0055] to-[#ff0055]">
                 Let’s Build It !
@@ -149,9 +149,7 @@ export default function Contact() {
             <a href="https://github.com/DOUKANI-Nourelhouda" target="_blank" rel="noreferrer" className="px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-[#ff0055] hover:bg-[#ff0055]/10 text-xs font-medium flex items-center gap-2 transition duration-300">
               <FaGithub className="text-[#ff0055] text-sm" /> GitHub
             </a>
-            <a href="https://www.instagram.com/nourelhouda_dk?igsi=NnV5cGhwa3hhaWF1" target="_blank" rel="noreferrer" className="px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-[#ff0055] hover:bg-[#ff0055]/10 text-xs font-medium flex items-center gap-2 transition duration-300">
-              <FaInstagram className="text-[#ff0055] text-sm" /> Instagram
-            </a>
+           
           </div>
 
         </div>

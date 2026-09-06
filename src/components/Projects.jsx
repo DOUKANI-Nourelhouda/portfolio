@@ -63,7 +63,7 @@ export default function Projects() {
       
       {/* 🌟 Title & Subtitle Section */}
       <div className="mb-14 text-left">
-       <div className="mb-8 sm:mb-10 text-left border-l-4 border-[#ff0055] pl-10 sm:pl-6">
+       <div className="mb-8 sm:mb-10 text-left border-l-4 border-[#ff0055] pl-4 sm:pl-6">
   
 
   <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-3">
@@ -95,7 +95,7 @@ export default function Projects() {
               {/* Image Banner Container */}
               <div className={`lg:col-span-7 ${isEven ? 'lg:order-1' : 'lg:order-2'} relative overflow-hidden rounded-2xl border border-white/10 bg-black/40 flex items-center justify-center p-2`}>
                <img
-  src={`${process.env.PUBLIC_URL}/kk.jpg`}
+  src={project.image}
   alt={project.title}
   className="w-full h-auto object-contain max-h-[400px] rounded-xl group-hover:scale-[1.02] transition-transform duration-500 ease-out"
 />
