@@ -66,7 +66,7 @@ export default function Projects() {
        <div className="mb-8 sm:mb-10 text-left border-l-4 border-[#ff0055] pl-4 sm:pl-6">
   
 
-  <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-3">
+  <h1 className="text-5xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-3">
     WHAT SHE <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff0055] to-[#ff0055]">MADE ?</span>
   </h1>
 

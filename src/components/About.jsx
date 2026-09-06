@@ -48,10 +48,10 @@ export default function About() {
       {/* 1. Header Section / Responsive Typography */}
      {/* 1. Header Section */}
 {/* 1. Header Section */}
-<div className="mb-12 sm:mb-16 text-left border-l-4 border-[#ff0055] pl-10 sm:pl-6">
+<div className="mb-12 sm:mb-16 text-left border-l-4 border-[#ff0055] pl-4 sm:pl-6">
   
 
-  <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-3">
+  <h1 className="text-5xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-3">
     WHO  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff0055] to-[#ff0055]">IS SHE ?</span>
   </h1>
 

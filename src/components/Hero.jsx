@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-[85vh] w-full overflow-hidden flex items-center justify-center px-6 py-0 relative">
+    <section id="home" className="min-h-[85vh] w-full overflow-hidden flex items-center justify-center px-10 py-0 relative">
       
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute -top-24 -left-24 w-[450px] h-[450px] rounded-full border border-purple-500/20 animate-spin-extremely-slow">
@@ -29,7 +29,7 @@ export default function Hero() {
        <p className="text-lg sm:text-xl font-medium text-[#FF0055]">
              HOLA, I'm
 </p>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
+          <h1 className="text-6xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
             DOUKANI <br />
             <span className="bg-gradient-to-r from-[#FF0055] via-[#ff0055] to-[#ff0055] bg-clip-text text-transparent">
               Nourelhouda
@@ -120,12 +120,11 @@ href={process.env.PUBLIC_URL + "/cv.pdf"}
             </a>
           </div>
 
-          <div className="flex items-center justify-center lg:justify-start gap-12 text-gray-300 text-2xl pt-0">
-            <a 
+          <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-12 text-gray-300 text-2xl pt-0"> <a 
               href="https://github.com/DOUKANI-Nourelhouda" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="w-12 h-12 rounded-full bg-black/50 border border-[#ff0055] backdrop-blur-md flex items-center justify-center hover:text-[#ff0055] hover:border-[#ff0055]/50 hover:shadow-[0_0_15px_rgba(255,0,85,0.4)] transition duration-300">
+              className="w-12 h-12 rounded-full bg-black/40 border border-[#ff0055] backdrop-blur-md flex items-center justify-center hover:text-[#ff0055] hover:border-[#ff0055]/50 hover:shadow-[0_0_15px_rgba(255,0,85,0.4)] transition duration-300">
               <FaGithub />
             </a>
 
