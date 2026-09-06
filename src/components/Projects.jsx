@@ -94,14 +94,11 @@ export default function Projects() {
               
               {/* Image Banner Container */}
               <div className={`lg:col-span-7 ${isEven ? 'lg:order-1' : 'lg:order-2'} relative overflow-hidden rounded-2xl border border-white/10 bg-black/40 flex items-center justify-center p-2`}>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-auto object-contain max-h-[400px] rounded-xl group-hover:scale-[1.02] transition-transform duration-500 ease-out"
-                  onError={(e) => {
-                    e.target.src = "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop";
-                  }}
-                />
+               <img
+  src={`${process.env.PUBLIC_URL}/kk.jpg`}
+  alt={project.title}
+  className="w-full h-auto object-contain max-h-[400px] rounded-xl group-hover:scale-[1.02] transition-transform duration-500 ease-out"
+/>
               </div>
 
               {/* Details Content */}
