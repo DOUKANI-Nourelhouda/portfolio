@@ -43,7 +43,7 @@ export default function About() {
   ];
 
   return (
-    <div className="w-full min-h-screen py-3 sm:py-12 md:py-20 px-4 sm:px-8 max-w-6xl mx-auto relative z-10 text-white">
+    <div className="w-full min-h-screen py-6 px-4 sm:py-12 md:py-20 px-4 sm:px-8 max-w-6xl mx-auto relative z-10 text-white">
       
       {/* 1. Header Section / Responsive Typography */}
      {/* 1. Header Section */}

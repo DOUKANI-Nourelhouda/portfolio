@@ -59,7 +59,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="min-h-screen w-full py-3 px-6 md:px-12 max-w-7xl mx-auto flex flex-col justify-center relative z-10">
+    <section className="min-h-screen w-full py-6 px-4 md:px-12 max-w-7xl mx-auto flex flex-col justify-center relative z-10">
       
       {/* 🌟 Title & Subtitle Section */}
       <div className="mb-14 text-left">
