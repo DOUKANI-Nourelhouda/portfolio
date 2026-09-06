@@ -33,7 +33,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="min-h-screen w-full relative z-10 flex items-center justify-center px-4 sm:px-8 lg:px-16 py-12 sm:py-10 text-white">
+    <section id="contact" className="min-h-screen w-full relative z-10 flex items-center justify-center px-4 sm:px-8 lg:px-16 py-12 sm:py-3 text-white">
       <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
         
         {/* Form Card */}

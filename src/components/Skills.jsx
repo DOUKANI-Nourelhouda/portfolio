@@ -91,7 +91,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="w-full min-h-screen py-12 px-4 sm:px-8 max-w-6xl mx-auto relative z-10 text-white">
+    <div className="w-full min-h-screen py-6 px-4 sm:px-8 max-w-6xl mx-auto relative z-10 text-white">
       
       {/* 1. Header Section */}
       <div className="mb-14 text-left">
