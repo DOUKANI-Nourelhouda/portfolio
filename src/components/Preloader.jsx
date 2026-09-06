@@ -70,9 +70,9 @@ export default function Preloader({ onComplete }) {
           Welcome to My <span className="bg-gradient-to-r from-[#ff0055] to-[#ff0055] bg-clip-text text-transparent">Portfolio</span>
         </h1>
         
-        <p className="text-xs font-mono text-gray-400 tracking-[0.3em] uppercase mb-9 opacity-80">
-          I didnt find myself <span className=" mx-1">•</span> I built it
-        </p>
+       <p className="text-[10px] sm:text-xs md:text-sm font-mono text-gray-400 tracking-[0.3em] uppercase mb-9 opacity-80">
+  I didnt find myself <span className="mx-1">•</span> I built it
+</p>
 
         {/* 📊 شريط التحميل مع النسبة المئوية */}
         <div className="w-full space-y-3 mb-10">
