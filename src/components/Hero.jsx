@@ -90,7 +90,7 @@ export default function Hero() {
               </svg>
             </div>
 
-          <div className="relative z-10 flex justify-center items-center">
+          <div className="relative z-10 flex justify-center items-center  mb-8 lg:mb-0">
   <img 
     src={`${process.env.PUBLIC_URL}/ne.jpg`}
     alt="DOUKANI Nourelhouda" 
