@@ -122,7 +122,7 @@ export default function Skills() {
                 <div className="p-2.5 bg-[#ff0055]/10 rounded-xl border border-[#ff0055] group-hover:scale-110 transition duration-300">
                   {category.icon}
                 </div>
-                <h2 className="text-sm font-bold tracking-wider text-[#ff0055]">
+                <h2 className="text-sm font-bold tracking-wider text-white group-hover:text-[#ff0055] transition">
                   {category.title}
                 </h2>
               </div>
