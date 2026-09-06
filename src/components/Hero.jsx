@@ -124,21 +124,19 @@ href={process.env.PUBLIC_URL + "/cv.pdf"}
               href="https://github.com/DOUKANI-Nourelhouda" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="w-12 h-12 rounded-full bg-black/40 border border-[#ff0055] backdrop-blur-md flex items-center justify-center hover:text-[#ff0055] hover:border-[#ff0055]/50 hover:shadow-[0_0_15px_rgba(255,0,85,0.4)] transition duration-300">
-              <FaGithub />
+             className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-sm border border-[#ff0055] font-medium shadow-[0_0_20px_rgba(255,0,85,0.4)] hover:text-[#ff0055] hover:bg-black/50 hover:border-[#ff0055]/50 hover:shadow-[0_0_30px_rgba(255,0,85,0.7)] hover:scale-105 transition-all duration-300 flex items-center justify-center"><FaGithub />
             </a>
 
             <a 
               href="https://www.linkedin.com/in/doukani-nour-el-houda-5abb8b359?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
               target="_blank" 
               rel="noopener noreferrer" 
-             className="w-12 h-12 rounded-full bg-black/50 border border-[#ff0055] backdrop-blur-md flex items-center justify-center hover:text-[#ff0055] hover:border-[#ff0055]/50 hover:shadow-[0_0_15px_rgba(255,0,85,0.4)] transition duration-300" >
-              <FaLinkedin />
+            className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-sm border border-[#ff0055] font-medium shadow-[0_0_20px_rgba(255,0,85,0.4)] hover:text-[#ff0055] hover:bg-black/50 hover:border-[#ff0055]/50 hover:shadow-[0_0_30px_rgba(255,0,85,0.7)] hover:scale-105 transition-all duration-300 flex items-center justify-center"> <FaLinkedin />
             </a>
 
             <a 
               href="mailto:houdadok46@gmail.com" 
-             className="w-12 h-12 rounded-full bg-black/50 border border-[#ff0055] backdrop-blur-md flex items-center justify-center hover:text-[#ff0055] hover:border-[#ff0055]/50 hover:shadow-[0_0_15px_rgba(255,0,85,0.4)] transition duration-300" >
+             className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-sm border border-[#ff0055] font-medium shadow-[0_0_20px_rgba(255,0,85,0.4)] hover:text-[#ff0055] hover:bg-black/50 hover:border-[#ff0055]/50 hover:shadow-[0_0_30px_rgba(255,0,85,0.7)] hover:scale-105 transition-all duration-300 flex items-center justify-center" >
               <FaEnvelope />
             </a>
 
@@ -146,7 +144,7 @@ href={process.env.PUBLIC_URL + "/cv.pdf"}
               href="https://www.instagram.com/nourelhouda_dk?igsi=NnV5cGhwa3hhaWF1" 
               target="_blank" 
               rel="noopener noreferrer" 
-             className="w-12 h-12 rounded-full bg-black/50 border border-[#ff0055] backdrop-blur-md flex items-center justify-center hover:text-[#ff0055] hover:border-[#ff0055]/50 hover:shadow-[0_0_15px_rgba(255,0,85,0.4)] transition duration-300"
+             className="w-12 h-12 rounded-full bg-black/40 backdrop-blur-sm border border-[#ff0055] font-medium shadow-[0_0_20px_rgba(255,0,85,0.4)] hover:text-[#ff0055] hover:bg-black/50 hover:border-[#ff0055]/50 hover:shadow-[0_0_30px_rgba(255,0,85,0.7)] hover:scale-105 transition-all duration-300 flex items-center justify-center"
             >
               <FaInstagram />
             </a>
