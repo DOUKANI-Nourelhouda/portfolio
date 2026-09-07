@@ -19,7 +19,7 @@ export default function Projects() {
   id: "Project 02",
   title: "WEEN - Unified Transportation & Navigation Platform",
   subtitle: "Comprehensive Transportation Management & Navigation Solution",
-  description: "Unified transportation and navigation platform that simplifies travel across Algeria by integrating multiple transport services into one smart digital solution.\n  (Note: the link is not avilable to the public yet)",
+  description: "Unified transportation and navigation platform that simplifies travel across Algeria by integrating multiple transport services into one smart digital solution.\n  ( Note : Neither the code nor the link is available to the public yet )",
   tags: ["Dart", "Flutter", "Express.js", "MongoDB", "Node.js", "Grok"],
   github: "",
   demo: "",
