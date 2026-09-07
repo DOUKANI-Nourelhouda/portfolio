@@ -17,6 +17,7 @@ export default function Skills() {
       icon: <Code className="w-5 h-5 text-[#ff0055]" />,
       skills: [
         "C",
+        "C#",
         "Java",
         "JavaScript",
         "Dart",
@@ -38,7 +39,9 @@ export default function Skills() {
       title: "DESKTOP DEV",
       icon: <Laptop className="w-5 h-5 text-[#ff0055]" />,
       skills: [
+        "C#",
         "WPF",
+        ".NET"
   
       ]
     },
