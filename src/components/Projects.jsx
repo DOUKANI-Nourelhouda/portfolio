@@ -5,7 +5,18 @@ import { Sparkles, ExternalLink, Download } from 'lucide-react';
 export default function Projects() {
   const projectsList = [
     {
-      id: "Project 01",
+  id: "Project 01",
+  title: "Hands - Student Residence Marketplace",
+  subtitle: "A Social Marketplace for University Residence Students",
+  description: "A residence-based social marketplace that connects students to offer services, sell products, discover opportunities, request help, and interact with their community through personalized feeds, private messaging, and group chats.",
+  tags: ["Dart", "Flutter", "Express.js", "Node.js", "MongoDB", "Socket.IO", "Chargily", "Render"],
+  github: "YOUR_HANDS_FRONTEND_GITHUB_LINK",
+  demo: "https://github.com/DOUKANI-Nourelhouda/hands_frontend/releases/download/hands/app-release.apk",
+  year: "2026",
+  image: `${process.env.PUBLIC_URL}/hands.jpg`
+},
+    {
+      id: "Project 02",
       title: "BookHup - Social Reading Platform",
       subtitle: "Centralized Book Management & Community Engagement",
       description: "A social library for readers to discover new books,track what they read, organize their libraries, save favorite quotes, and connect with other readers.",
@@ -16,7 +27,7 @@ export default function Projects() {
       image: `${process.env.PUBLIC_URL}/i.jpg`
     },
    {
-  id: "Project 02",
+  id: "Project 03",
   title: "WEEN - Unified Transportation & Navigation Platform",
   subtitle: "Comprehensive Transportation Management & Navigation Solution",
   description: "Unified transportation and navigation platform that simplifies travel across Algeria by integrating multiple transport services into one smart digital solution.\n  ( Note : Neither the code nor the link is available to the public yet )",
@@ -27,7 +38,7 @@ export default function Projects() {
   image: `${process.env.PUBLIC_URL}/po.png`
 },
 {
-  id: "Project 03",
+  id: "Project 04",
   title: "ClassBox - Your Complete Lecture Companion",
   description: "Never lose an important lecture photo, note, recording, or file again! Class Box helps you organize all your study materials by subject and lecture, making your study life simpler and more organized.",
   tags: ["Dart", "Flutter", "Firebase", "Firestore"],
@@ -37,7 +48,7 @@ export default function Projects() {
   image: `${process.env.PUBLIC_URL}/im2.jpg`
 }
 ,{
-  id: "Project 04",
+  id: "Project 05",
   title: "Tennix - Visual Identity of a Tennis team",
   description: "A visual identity project for a tennis team, including logo design, color scheme, typography, and branding materials to create a cohesive and professional image for the team.",
   tags: ["Adobe Illustrator", "Adobe Photoshop"],
@@ -47,7 +58,7 @@ export default function Projects() {
   image: `${process.env.PUBLIC_URL}/tennix.jpg`
 },
 {
-  id: "Project 05",
+  id: "Project 06",
   title: "Subway - Running Game",
   description: "A fun and engaging running game inspired by the iconic Subway brand, featuring vibrant visuals and smooth gameplay.",
   tags: ["Gdscript", "Godot engine"],
