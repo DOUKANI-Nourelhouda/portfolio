@@ -33,7 +33,7 @@ export default function Projects() {
   subtitle: "Comprehensive Transportation Management & Navigation Solution",
   description: "Unified transportation and navigation platform that simplifies travel across Algeria by integrating multiple transport services into one smart digital solution.\n  ( Note : The link is not available to the public yet )",
   tags: ["Dart", "Flutter", "Express.js", "MongoDB", "Node.js", "Grok"],
-  video: "/videos/ween.mp4",
+  video: "",
   demo: "",
   year: "2026",
   image: `${process.env.PUBLIC_URL}/po.png`
@@ -213,16 +213,16 @@ video: "https://res.cloudinary.com/a7a2jub2/video/upload/classbox.mp4",
       </div>
 
       {/* Bigger Video Player */}
-      <video
-        key={selectedVideo.video}
-        src={selectedVideo.video}
-        controls
-        autoPlay
-        playsInline
-        className="w-full h-[75vh] object-contain rounded-xl bg-black"
-      >
-        Your browser does not support video playback.
-      </video>
+   <video
+  key={selectedVideo.video}
+  src={selectedVideo.video}
+  controls
+  playsInline
+  preload="auto"
+  className="w-full h-[75vh] object-contain rounded-xl bg-black"
+>
+  Your browser does not support video playback.
+</video>
 
       <p className="text-gray-400 text-xs mt-3">
         Project demonstration · {selectedVideo.year}
