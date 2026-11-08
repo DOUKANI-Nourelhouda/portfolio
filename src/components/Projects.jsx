@@ -11,7 +11,7 @@ export default function Projects() {
   subtitle: "A Social Marketplace for University Residence Students",
   description: "A residence-based social marketplace that connects students to offer services, sell products, discover opportunities, request help, and interact with their community through personalized feeds, private messaging, and group chats.",
   tags: ["Dart", "Flutter", "Express.js", "Node.js", "MongoDB", "Socket.IO", "Chargily", "Render"],
-  video: "/videos/hands.mp4",
+  video: "https://res.cloudinary.com/a7a2jub2/video/upload/hands.mp4",
   demo: "https://github.com/DOUKANI-Nourelhouda/hands_frontend/releases/download/hands/app-release.apk",
   year: "2026",
   image: `${process.env.PUBLIC_URL}/hands.jpg`
@@ -22,7 +22,7 @@ export default function Projects() {
       subtitle: "Centralized Book Management & Community Engagement",
       description: "A social library for readers to discover new books,track what they read, organize their libraries, save favorite quotes, and connect with other readers.",
       tags: ["Dart", "Flutter", "Express.js", "Node.js", "MongoDB","Render"],
-    video: "/videos/bookhup.mp4",
+    video: "https://res.cloudinary.com/a7a2jub2/video/upload/bookhup.mp4",
       demo: "https://github.com/nourelhouda666/bookhup_frontend/releases/download/v1.0.0/app-release.apk",
       year: "2026",
       image: `${process.env.PUBLIC_URL}/i.jpg`
@@ -43,7 +43,7 @@ export default function Projects() {
   title: "ClassBox - Your Complete Lecture Companion",
   description: "Never lose an important lecture photo, note, recording, or file again! Class Box helps you organize all your study materials by subject and lecture, making your study life simpler and more organized.",
   tags: ["Dart", "Flutter", "Firebase", "Firestore"],
- video: "/videos/classbox.mp4",
+video: "https://res.cloudinary.com/a7a2jub2/video/upload/classbox.mp4",
   demo: "https://lnkd.in/eNFwhJ5f",
   year: "2025",
   image: `${process.env.PUBLIC_URL}/im2.jpg`
@@ -63,7 +63,7 @@ export default function Projects() {
   title: "Subway - Running Game",
   description: "A fun and engaging running game inspired by the iconic Subway brand, featuring vibrant visuals and smooth gameplay.",
   tags: ["Gdscript", "Godot engine"],
- video: "/videos/subway.mp4",
+ video: "https://res.cloudinary.com/a7a2jub2/video/upload/subway.mp4",
   demo: "https://github.com/DOUKANI-Nourelhouda/portfolio/releases/download/untagged-f86fbd24003cef032c9d/subway.apk",
   year: "2026",
   image: `${process.env.PUBLIC_URL}/kk.jpg`
@@ -153,15 +153,14 @@ export default function Projects() {
 <div className="pt-2 grid grid-cols-2 gap-3">
 
   {/* Watch Video Button */}
- <a
-  href={project.video}
-  target="_blank"
-  rel="noreferrer"
-  className="..."
+ <button
+  onClick={() => setSelectedVideo(project)}
+  disabled={!project.video}
+  className="w-full py-3 border border-[#ff0055] rounded-xl flex items-center justify-center gap-2 text-xs font-semibold text-white hover:bg-[#ff0055]/20 transition disabled:opacity-40"
 >
   <Play className="w-4 h-4" />
   Watch Demo
-</a>
+</button>
 
   {/* View Project Button */}
   <a
@@ -183,20 +182,18 @@ export default function Projects() {
           );
         })}
       </div>
-
 {/* VIDEO POPUP */}
 {selectedVideo && (
   <div
-    className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
+    className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex items-center justify-center p-2 sm:p-4"
     onClick={() => setSelectedVideo(null)}
   >
     <div
-      className="relative w-full max-w-4xl bg-[#111] border border-[#ff0055]/50 rounded-2xl p-4 sm:p-6 shadow-[0_0_60px_rgba(255,0,85,0.15)]"
+      className="relative w-full max-w-[1600px] bg-[#111] border border-[#ff0055]/50 rounded-2xl p-3 sm:p-5 shadow-[0_0_60px_rgba(255,0,85,0.15)]"
       onClick={(e) => e.stopPropagation()}
     >
-
       {/* Header */}
-      <div className="flex items-center justify-between mb-5">
+      <div className="flex items-center justify-between mb-3">
         <div>
           <p className="text-[#ff0055] text-xs font-mono">
             {selectedVideo.id}
@@ -208,29 +205,28 @@ export default function Projects() {
 
         <button
           onClick={() => setSelectedVideo(null)}
-          className="text-white hover:text-[#ff0055] text-3xl transition"
+          className="text-white hover:text-[#ff0055] text-4xl transition px-3"
           aria-label="Close video"
         >
           &times;
         </button>
       </div>
 
-      {/* Video Player */}
+      {/* Bigger Video Player */}
       <video
         key={selectedVideo.video}
         src={selectedVideo.video}
         controls
         autoPlay
         playsInline
-        className="w-full max-h-[70vh] rounded-xl bg-black"
+        className="w-full h-[75vh] object-contain rounded-xl bg-black"
       >
         Your browser does not support video playback.
       </video>
 
-      <p className="text-gray-400 text-xs mt-4">
+      <p className="text-gray-400 text-xs mt-3">
         Project demonstration · {selectedVideo.year}
       </p>
-
     </div>
   </div>
 )}
