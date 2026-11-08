@@ -1,16 +1,17 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, ExternalLink, Download } from 'lucide-react';
+import { Play, ExternalLink } from "lucide-react";
+import { useState } from "react";
 
 export default function Projects() {
+  const [selectedVideo, setSelectedVideo] = useState(null);
   const projectsList = [
     {
   id: "Project 01",
-  title: "Hands - Student Residence Marketplace",
+  title: "Hands - Social Marketplace",
   subtitle: "A Social Marketplace for University Residence Students",
   description: "A residence-based social marketplace that connects students to offer services, sell products, discover opportunities, request help, and interact with their community through personalized feeds, private messaging, and group chats.",
   tags: ["Dart", "Flutter", "Express.js", "Node.js", "MongoDB", "Socket.IO", "Chargily", "Render"],
-  github: "YOUR_HANDS_FRONTEND_GITHUB_LINK",
+  video: "/videos/hands.mp4",
   demo: "https://github.com/DOUKANI-Nourelhouda/hands_frontend/releases/download/hands/app-release.apk",
   year: "2026",
   image: `${process.env.PUBLIC_URL}/hands.jpg`
@@ -21,7 +22,7 @@ export default function Projects() {
       subtitle: "Centralized Book Management & Community Engagement",
       description: "A social library for readers to discover new books,track what they read, organize their libraries, save favorite quotes, and connect with other readers.",
       tags: ["Dart", "Flutter", "Express.js", "Node.js", "MongoDB","Render"],
-      github: "https://github.com/DOUKANI-Nourelhouda/bookhup_frontend",
+    video: "/videos/bookhup.mp4",
       demo: "https://github.com/nourelhouda666/bookhup_frontend/releases/download/v1.0.0/app-release.apk",
       year: "2026",
       image: `${process.env.PUBLIC_URL}/i.jpg`
@@ -30,9 +31,9 @@ export default function Projects() {
   id: "Project 03",
   title: "WEEN - Unified Transportation & Navigation Platform",
   subtitle: "Comprehensive Transportation Management & Navigation Solution",
-  description: "Unified transportation and navigation platform that simplifies travel across Algeria by integrating multiple transport services into one smart digital solution.\n  ( Note : Neither the code nor the link is available to the public yet )",
+  description: "Unified transportation and navigation platform that simplifies travel across Algeria by integrating multiple transport services into one smart digital solution.\n  ( Note : The link is not available to the public yet )",
   tags: ["Dart", "Flutter", "Express.js", "MongoDB", "Node.js", "Grok"],
-  github: "",
+  video: "/videos/ween.mp4",
   demo: "",
   year: "2026",
   image: `${process.env.PUBLIC_URL}/po.png`
@@ -42,7 +43,7 @@ export default function Projects() {
   title: "ClassBox - Your Complete Lecture Companion",
   description: "Never lose an important lecture photo, note, recording, or file again! Class Box helps you organize all your study materials by subject and lecture, making your study life simpler and more organized.",
   tags: ["Dart", "Flutter", "Firebase", "Firestore"],
-  github: "",
+ video: "/videos/classbox.mp4",
   demo: "https://lnkd.in/eNFwhJ5f",
   year: "2025",
   image: `${process.env.PUBLIC_URL}/im2.jpg`
@@ -52,7 +53,7 @@ export default function Projects() {
   title: "Tennix - Visual Identity of a Tennis team",
   description: "A visual identity project for a tennis team, including logo design, color scheme, typography, and branding materials to create a cohesive and professional image for the team.",
   tags: ["Adobe Illustrator", "Adobe Photoshop"],
-  github: "",
+  video: "",
   demo: "https://lnkd.in/eY5uhg6c?trk=public_post-text",
   year: "2025",
   image: `${process.env.PUBLIC_URL}/tennix.jpg`
@@ -62,7 +63,7 @@ export default function Projects() {
   title: "Subway - Running Game",
   description: "A fun and engaging running game inspired by the iconic Subway brand, featuring vibrant visuals and smooth gameplay.",
   tags: ["Gdscript", "Godot engine"],
-  github: "",
+ video: "/videos/subway.mp4",
   demo: "https://github.com/DOUKANI-Nourelhouda/portfolio/releases/download/untagged-f86fbd24003cef032c9d/subway.apk",
   year: "2026",
   image: `${process.env.PUBLIC_URL}/kk.jpg`
@@ -147,30 +148,34 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Actions */}
-                <div className="pt-2 grid grid-cols-2 gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-full py-3 bg-white/5 hover:bg-white/10 border border-[#ff0055] rounded-xl flex items-center justify-center gap-2 text-xs font-semibold text-white transition duration-300"
-                  >
-                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                    </svg>
-                    Code
-                  </a>
+               
+{/* Actions */}
+<div className="pt-2 grid grid-cols-2 gap-3">
 
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-full py-3 bg-[#ff0055] hover:bg-[#ff0055]/80 rounded-xl flex items-center justify-center gap-2 text-xs font-semibold text-white shadow-lg shadow-[#ff0055]/25 transition duration-300"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    View Project
-                  </a>
-                </div>
+  {/* Watch Video Button */}
+ <a
+  href={project.video}
+  target="_blank"
+  rel="noreferrer"
+  className="..."
+>
+  <Play className="w-4 h-4" />
+  Watch Demo
+</a>
+
+  {/* View Project Button */}
+  <a
+    href={project.demo}
+    target="_blank"
+    rel="noreferrer"
+    className="w-full py-3 bg-[#ff0055] hover:bg-[#ff0055]/80 rounded-xl flex items-center justify-center gap-2 text-xs font-semibold text-white shadow-lg shadow-[#ff0055]/25 transition duration-300"
+  >
+    <ExternalLink className="w-4 h-4" />
+    View Project
+  </a>
+
+</div>
+
 
               </div>
 
@@ -178,6 +183,57 @@ export default function Projects() {
           );
         })}
       </div>
+
+{/* VIDEO POPUP */}
+{selectedVideo && (
+  <div
+    className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
+    onClick={() => setSelectedVideo(null)}
+  >
+    <div
+      className="relative w-full max-w-4xl bg-[#111] border border-[#ff0055]/50 rounded-2xl p-4 sm:p-6 shadow-[0_0_60px_rgba(255,0,85,0.15)]"
+      onClick={(e) => e.stopPropagation()}
+    >
+
+      {/* Header */}
+      <div className="flex items-center justify-between mb-5">
+        <div>
+          <p className="text-[#ff0055] text-xs font-mono">
+            {selectedVideo.id}
+          </p>
+          <h2 className="text-white text-lg sm:text-2xl font-bold mt-1">
+            {selectedVideo.title}
+          </h2>
+        </div>
+
+        <button
+          onClick={() => setSelectedVideo(null)}
+          className="text-white hover:text-[#ff0055] text-3xl transition"
+          aria-label="Close video"
+        >
+          &times;
+        </button>
+      </div>
+
+      {/* Video Player */}
+      <video
+        key={selectedVideo.video}
+        src={selectedVideo.video}
+        controls
+        autoPlay
+        playsInline
+        className="w-full max-h-[70vh] rounded-xl bg-black"
+      >
+        Your browser does not support video playback.
+      </video>
+
+      <p className="text-gray-400 text-xs mt-4">
+        Project demonstration · {selectedVideo.year}
+      </p>
+
+    </div>
+  </div>
+)}
 
     </section>
   );
