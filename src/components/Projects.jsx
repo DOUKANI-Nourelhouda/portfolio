@@ -33,7 +33,7 @@ export default function Projects() {
   subtitle: "Comprehensive Transportation Management & Navigation Solution",
   description: "Unified transportation and navigation platform that simplifies travel across Algeria by integrating multiple transport services into one smart digital solution.\n  ( Note : The link is not available to the public yet )",
   tags: ["Dart", "Flutter", "Express.js", "MongoDB", "Node.js", "Grok"],
-  video: "",
+   video: "https://res.cloudinary.com/a7a2jub2/video/upload/v1794206494/weenn.mp4",
   demo: "",
   year: "2026",
   image: `${process.env.PUBLIC_URL}/po.png`
@@ -170,7 +170,7 @@ video: "https://res.cloudinary.com/a7a2jub2/video/upload/classbox.mp4",
     className="w-full py-3 bg-[#ff0055] hover:bg-[#ff0055]/80 rounded-xl flex items-center justify-center gap-2 text-xs font-semibold text-white shadow-lg shadow-[#ff0055]/25 transition duration-300"
   >
     <ExternalLink className="w-4 h-4" />
-    View Project
+    Download Project
   </a>
 
 </div>
@@ -192,28 +192,30 @@ video: "https://res.cloudinary.com/a7a2jub2/video/upload/classbox.mp4",
       className="relative w-full max-w-[1600px] bg-[#111] border border-[#ff0055]/50 rounded-2xl p-3 sm:p-5 shadow-[0_0_60px_rgba(255,0,85,0.15)]"
       onClick={(e) => e.stopPropagation()}
     >
+
       {/* Header */}
       <div className="flex items-center justify-between mb-3">
-        <div>
+        <div className="min-w-0">
           <p className="text-[#ff0055] text-xs font-mono">
             {selectedVideo.id}
           </p>
-          <h2 className="text-white text-lg sm:text-2xl font-bold mt-1">
+
+          <h2 className="text-white text-base sm:text-xl lg:text-2xl font-bold mt-1">
             {selectedVideo.title}
           </h2>
         </div>
 
         <button
           onClick={() => setSelectedVideo(null)}
-          className="text-white hover:text-[#ff0055] text-4xl transition px-3"
+          className="text-white hover:text-[#ff0055] text-3xl sm:text-4xl transition px-2"
           aria-label="Close video"
         >
           &times;
         </button>
       </div>
 
-      {/* Bigger Video Player */}
-   <video
+      {/* Responsive Video Player */}
+       <video
   key={selectedVideo.video}
   src={selectedVideo.video}
   controls
@@ -224,12 +226,15 @@ video: "https://res.cloudinary.com/a7a2jub2/video/upload/classbox.mp4",
   Your browser does not support video playback.
 </video>
 
+      {/* Footer */}
       <p className="text-gray-400 text-xs mt-3">
         Project demonstration · {selectedVideo.year}
       </p>
+
     </div>
   </div>
 )}
+
 
     </section>
   );
