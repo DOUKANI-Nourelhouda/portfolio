@@ -12,7 +12,7 @@ export default function Projects() {
   description: "A residence-based social marketplace that connects students to offer services, sell products, discover opportunities, request help, and interact with their community through personalized feeds, private messaging, and group chats.",
   tags: ["Dart", "Flutter", "Express.js", "Node.js", "MongoDB", "Socket.IO", "Chargily", "Render"],
   video: "https://res.cloudinary.com/a7a2jub2/video/upload/hands.mp4",
-  demo: "https://github.com/DOUKANI-Nourelhouda/hands_frontend/releases/download/hands/app-release.apk",
+  demo: "https://drive.google.com/file/d/1G_bEkSk3ImNsj50OKieSOD36M-sN0aY3/view?usp=drivesdk",
   year: "2026",
   image: `${process.env.PUBLIC_URL}/hands.jpg`
 },
